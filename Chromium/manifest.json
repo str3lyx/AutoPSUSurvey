@@ -1,0 +1,68 @@
+{
+    "name": "Auto PSU Satisfaction",
+    "version": "1.0.3",
+    "description": "Build an Extension!",
+    "permissions": [
+        "https://tes.psu.ac.th/*",
+        "https://infor.eng.psu.ac.th/se/student/*",
+        "storage"
+    ],
+    "options_page": "html/index.html",
+    "content_scripts": [
+		{
+			"matches": [
+				"https://tes.psu.ac.th/*/Std/SubjEva.asp"
+			],
+			"js": [
+                "url/vote_auto_script.js"
+			],
+			"run_at": "document_idle"
+        },
+        {
+            "matches": [
+				"https://tes.psu.ac.th/*/Std/ListSubjEva.asp"
+			],
+			"js": [
+                "url/list_auto_script.js"
+			],
+			"run_at": "document_idle"
+        },
+        {
+            "matches": [
+				"https://tes.psu.ac.th/*/Std/AddSubjEvaScript.asp"
+			],
+			"js": [
+                "url/skip_alert.js"
+			],
+			"run_at": "document_start"
+        },
+        {
+            "matches": [
+				"https://infor.eng.psu.ac.th/se/student/main/do_eval*"
+			],
+			"js": [
+                "url/infor_vote_auto_script.js"
+			],
+			"run_at": "document_idle"
+        },
+        {
+            "matches": [
+				"https://infor.eng.psu.ac.th/se/student/main/"
+			],
+			"js": [
+                "url/infor_list_auto_script.js"
+			],
+			"run_at": "document_idle"
+        },
+        {
+            "matches": [
+				"https://infor.eng.psu.ac.th/se/student/main"
+			],
+			"js": [
+                "url/infor_list_auto_script.js"
+			],
+			"run_at": "document_idle"
+        }
+	],
+    "manifest_version": 2
+  }
