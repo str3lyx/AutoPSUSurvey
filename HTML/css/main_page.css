@@ -1,0 +1,150 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    background-color: white;
+    font-family: 'Sarabun';
+    min-height: 600px;
+    min-width: 800px;
+}
+.heading-banner {
+    position: fixed;
+    width: 100%;
+    height: max(20vh, 120px);
+    background-color: rgb(0, 0, 39);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kanit';
+    font-weight: 800;
+    font-size: max(8vh, 48px);
+    z-index: 3;
+}
+.nav {
+    z-index: 3;
+    position: fixed;
+    top: max(20vh, 120px);
+    left: max(15%, 120px);
+    width: max(85%, 680px);
+    height: max(5vh, 30px);
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    padding-right: max(1vw, 8px);
+}
+#btn-goto {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btn-goto .txt {
+    font-size: 12px;
+    margin-right: max(0.5vw, 4px);
+    display: none;
+}
+#btn-goto:hover .txt {
+    display: block;
+}
+.sidebar {
+    position: fixed;
+    width: max(15%, 120px);
+    height: max(80vh, 480px);
+    top: max(20vh, 120px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(66, 66, 66);
+    z-index: 2;
+}
+.ex-toggle {
+    width: 100%;
+    height: max(10vh, 60px);
+    display: flex;
+    margin-top: max(50vh, 300px);
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(17, 17, 17);
+    font-family: 'Kanit';
+    font-size: max(2.5vh, 15px);
+    cursor: pointer;
+}
+.ex-toggle .indicator {
+    margin-left: max(1vw, 6px);
+    font-weight: bold;
+    font-size: max(3vh, 18px);
+}
+.ex-toggle .indicator .material-icons {
+    font-size: max(4vh, 24px);
+    display: none;
+}
+.ex-toggle .indicator .status {
+    display: block;
+}
+.ex-toggle .indicator.on .status {
+    color: #00ff00;
+}
+.ex-toggle .indicator.on .material-icons {
+    color: #6fff6f;
+}
+.ex-toggle .indicator.off .status {
+    color: #ff0000;
+}
+.ex-toggle .indicator.off .material-icons {
+    color: #ff6f6f;
+}
+.ex-toggle:hover .indicator .material-icons {
+    display: block;
+}
+.ex-toggle:hover .indicator .status {
+    display: none;
+}
+.sidebar-choice {
+    width: 100%;
+    height: max(10vh, 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(17, 17, 17);
+    cursor: pointer;
+    font-weight: normal;
+    font-family: 'Kanit';
+    font-size: max(2.5vh, 15px);
+}
+.sidebar-choice:hover {
+    background-color: rgb(24, 24, 24);
+    font-weight: bold;
+}
+.sidebar-choice:active {
+    background-color: rgb(49, 49, 49);
+    font-weight: normal;
+}
+.sidebar-choice.selected {
+    background-color: rgb(37, 37, 37);
+    cursor: default;
+    font-weight: bolder;
+    font-size: max(3vh, 18px);
+    border-right: max(0.5vw, 4px) solid gold;
+}
+.content {
+    position: absolute;
+    display: block;
+    left: max(15%, 120px);
+    top: max(25vh, 150px);
+    width: max(85%, 680px);
+    min-height: max(80vh, 480px);
+    z-index: 1;
+}
+.content * {
+    word-break: normal;
+}

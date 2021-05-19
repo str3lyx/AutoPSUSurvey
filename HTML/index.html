@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <link rel="stylesheet" href="css/fonts/kanit.css">
+        <link rel="stylesheet" href="css/fonts/sarabun.css">
+        <link rel="stylesheet" href="css/fonts/material_icon.css">
+        <link rel="stylesheet" href="css/main_page.css">
+        <link rel="stylesheet" href="css/instructor.css">
+        <link rel="stylesheet" href="css/subject.css">
+        <link rel="stylesheet" href="css/widget.css">
+        <script src="js/form_init.js" type="text/javascript"></script>
+        <script src="js/listener.js" type="text/javascript"></script>
+        <title>ตั้งค่าส่วนขยาย</title>
+    </head>
+    <body>
+        <div class="widget" id="save">
+            <span class="material-icons">save</span>
+            <span>Saved!</span>
+        </div>
+        <header class="heading-banner" id="heading-banner">ตั้งค่าส่วนขยาย</header>
+        <div class="nav">
+            <span id="btn-goto">
+                <span class="txt">ไปที่เว็บไซต์ประเมิน</span>
+                <span class="material-icons">open_in_new</span>
+            </span>
+        </div>
+        <section class="sidebar" id="sidebar">
+            <div class="sidebar-choice selected" id="btn-instructor">ประเมินผู้สอน</div>
+            <div class="sidebar-choice" id="btn-subject">ประเมินรายวิชา</div>
+            <div class="ex-toggle" id="btn-extension">
+                <div>สถานะ:</div>
+                <div class="indicator on">
+                    <div class="status">ON</div>
+                    <div class="material-icons">toggle_on</div>
+                </div>
+            </div>
+        </section>
+        <section class="content instructor" id="content">
+            <div id="instructor-content"></div>
+            <div id="subject-content"></div>
+        </section>
+    </body>
+</html>

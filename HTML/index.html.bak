@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<style>
+    @import url('./css/kanit.css');
+    @import url('./css/sarabun.css');
+    * {
+        box-sizing: border-box;
+    }
+    html, body {
+        padding: 0;
+        margin: 0;
+        user-select: none;
+        background-color: white;
+        font-family: 'Sarabun';
+        min-height: 600px;
+        min-width: 800px;
+    }
+    .heading-banner {
+        position: fixed;
+        width: 100vw;
+        height: max(20vh, 120px);
+        background-color: rgb(0, 0, 39);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Kanit';
+        font-weight: 800;
+        font-size: max(8vh, 48px);
+    }
+    .sidebar {
+        position: fixed;
+        width: max(20vw, 160px);
+        height: max(80vh, 480px);
+        top: max(20vh, 120px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(66, 66, 66);
+    }
+    .ex-toggle {
+        width: 100%;
+        height: max(12vh, 72px);
+        display: flex;
+        margin-top: max(44vh, 264px);
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: rgb(17, 17, 17);
+        font-family: 'Kanit';
+        font-size: max(2.5vh, 15px);
+    }
+    .sidebar-choice {
+        width: 100%;
+        height: max(12vh, 72px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: rgb(17, 17, 17);
+        cursor: pointer;
+        font-weight: normal;
+        font-family: 'Kanit';
+        font-size: max(2.5vh, 15px);
+    }
+    .sidebar-choice:hover {
+        background-color: rgb(24, 24, 24);
+        font-weight: bold;
+    }
+    .sidebar-choice:active {
+        background-color: rgb(49, 49, 49);
+        font-weight: normal;
+    }
+    .sidebar-choice.selected {
+        background-color: rgb(37, 37, 37);
+        cursor: default;
+        font-weight: bolder;
+        font-size: max(3vh, 18px);
+    }
+    .content {
+        position: absolute;
+        display: block;
+        left: max(20vw, 160px);
+        top: max(20vh, 120px);
+        width: max(80vw, 640px);
+        min-height: max(80vh, 480px);
+    }
+</style>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <title>Setting</title>
+    </head>
+    <body>
+        <header class="heading-banner">Setting</header>
+        <section class="sidebar">
+            <div class="sidebar-choice">ประเมินผู้สอน</div>
+            <div class="sidebar-choice selected">ประเมินรายวิชา</div>
+            <div class="ex-toggle">เปิดใช้งานแล้ว</div>
+        </section>
+        <div class="content">
+            CONTENT
+        </div>
+    </body>
+</html>
+<script>
+    
+</script>

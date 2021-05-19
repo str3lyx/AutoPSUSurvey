@@ -1,0 +1,43 @@
+@charset "UTF-8";
+.widget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 5;
+}
+#save {
+    background: white;
+    color: green;
+    top: -48px;
+    right: 0;
+    box-sizing: border-box;
+    height: 48px;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-family: 'Kanit';
+    font-size: 20px;
+}
+#save .material-icons {
+    margin-right: 8px;
+}
+.toast {
+    animation-name: toast-down;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes toast-down {
+    0% {
+        top: -48px;
+    }
+    35% {
+        top: 0;
+    }
+    65% {
+        top: 0;
+    }
+    100% {
+        top: -48px;
+    }
+}
